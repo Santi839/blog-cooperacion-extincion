@@ -277,3 +277,22 @@ a:hover {
   color: var(--text-muted);
   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
+
+/* --- 12. Corrección Tarjeta "Acerca de" --- */
+
+/* Hace que el título ("Sobre Noam Chomsky") sea brillante */
+body[data-page="about"] .card .card-title {
+  color: var(--text-color) !important;
+  opacity: 1 !important; /* Asegura que no sea transparente */
+}
+
+/* Hace que el texto principal (la cita) sea brillante */
+body[data-page="about"] .card .card-text {
+  color: var(--text-color);
+}
+
+/* Mantiene el texto del pie de página atenuado */
+body[data-page="about"] .card .card-text.small.text-muted {
+  color: var(--text-muted) !important;
+  opacity: 0.7 !important; /* Un poco más legible pero aún atenuado */
+}
