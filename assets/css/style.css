@@ -1,0 +1,85 @@
+/* assets/css/style.css */
+
+/* --- Estilos Generales --- */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif; /* Asegúrate de importar esta fuente si la usas */
+}
+
+/* --- Navbar --- */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* --- Cabecera Hero --- */
+.hero-header {
+  padding: 8rem 0;
+  background-color: #343a40;
+  /* Usa una imagen de fondo relevante. 
+    Puedes buscar en unsplash.com "climate change" o "cooperation"
+  */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-header h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+}
+
+/* --- Tarjetas de Blog (Interactivas) --- */
+.blog-card {
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  overflow: hidden; /* Para que la imagen respete el borde redondeado */
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.blog-card .btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.blog-card .btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+/* --- Página de Post Individual --- */
+.post-header-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+#post-content p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Footer --- */
+.footer {
+  background-color: #343a40;
+  color: #ccc;
+  padding: 2rem 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
