@@ -70,15 +70,20 @@ a:hover {
   color: var(--primary-hover);
 }
 
-/* --- 4. Navbar (¡AQUÍ EL CAMBIO!) --- */
+/* --- 4. Navbar (Estilo "Liquid Glass") --- */
 .navbar {
-  /* --- CAMBIO AQUÍ --- */
-  /* Hacemos el navbar transparente */
-  background-color: transparent !important;
-  /* Añadimos un sutil degradado para legibilidad sobre el hero */
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0));
-  border-bottom: none; /* Quitamos el borde */
-  /* ------------------- */
+  /* 1. Fondo translúcido (blanco al 10% sobre el fondo oscuro) */
+  background-color: rgba(255, 255, 255, 0.1) !important; 
+  
+  /* 2. El efecto "Frosted Glass" que difumina el fondo (el "silate") */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Para Safari */
+  
+  /* 3. Sombra pequeña que pediste */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  
+  /* 4. Un borde sutil que define el "vidrio" */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15); 
 }
 
 .navbar-brand {
